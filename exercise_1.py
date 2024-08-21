@@ -1,20 +1,20 @@
-# 1- Write a program that reads a sequence of numbers and displays their sum.
+# Escreva um código onde leia a sequência de números e mostre a soma
 
 def main() -> None:
-    quantity_sum: int = int(input("Please, enter the quantity of numbers you want to sum: "))
-    if quantity_sum < 0: 
-        print("Please, enter a valid number")
+    soma: int = int(input("Digite a quantidade de números que deseja somar: "))
+    if soma < 0: 
+        print("Por favor, digite um número válido")
     
     else: 
-        result: int = 0 
+        resultado: int = 0 
         i: int = 0
         
-        while i < quantity_sum:
-            read_number: int = int(input(f"Please, enter number {i+1}: "))
-            result = result + read_number
+        while i < soma:
+            qtdnumero: int = int(input(f"Coloque o número {i+1}: "))
+            resultado = resultado + qtdnumero
             i = i + 1
         
-        print (f"The sum of the entered numbers is {result}")
+        print (f"A soma dos números é {resultado}")
     
 if __name__ == "__main__":
     main()
